@@ -19,7 +19,6 @@
 		84B6485029CDF8A900EE212F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6484F29CDF8A900EE212F /* ProductModel.swift */; };
 		84B6485229CDFBAE00EE212F /* ConfigFletcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6485129CDFBAE00EE212F /* ConfigFletcher.swift */; };
 		84B6485529CE258700EE212F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 84B6485429CE258700EE212F /* Kingfisher */; };
-		84B6485829CE54A200EE212F /* UIScrollView_InfiniteScroll in Frameworks */ = {isa = PBXBuildFile; productRef = 84B6485729CE54A200EE212F /* UIScrollView_InfiniteScroll */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B6485529CE258700EE212F /* Kingfisher in Frameworks */,
-				84B6485829CE54A200EE212F /* UIScrollView_InfiniteScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +102,6 @@
 			name = pizza2;
 			packageProductDependencies = (
 				84B6485429CE258700EE212F /* Kingfisher */,
-				84B6485729CE54A200EE212F /* UIScrollView_InfiniteScroll */,
 			);
 			productName = pizza2;
 			productReference = 84B6482C29CDCF8500EE212F /* pizza2.app */;
@@ -413,11 +410,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		84B6485729CE54A200EE212F /* UIScrollView_InfiniteScroll */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 84B6485629CE54A200EE212F /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */;
-			productName = UIScrollView_InfiniteScroll;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -87,9 +87,10 @@ extension PizzaViewController : UITableViewDataSource{
             let myCell = cell as? PizzaTableViewCell,
             let pizza = config?.productList.pizzaList[indexPath.row]{
             let arr = min(pizza.price.small ?? 9999, pizza.price.medium ?? 9999, pizza.price.large ?? 9999)
-            myCell.pizzaTitleCell.text = "\(pizza.title) от \(arr) р/)
+            myCell.pizzaTitleCell.text = "\(pizza.title) от \(arr) р."
             
         }
+        return cell
            
     }
     
