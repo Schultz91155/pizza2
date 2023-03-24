@@ -1,0 +1,59 @@
+{
+    "productList":
+    {
+        "pizzaList":
+        [
+            {
+                "price": {"small" : 500, "medium" : 600, "large" : 700},
+                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true",
+                "title": "Маргарита",
+                "cost": 500,
+                "description": "сладкие томаты, сыр моцарелла, оливковое масло, пряный базилик.",
+                "fullDescription": "Цветовая палитра Маргариты соответствует итальянскому флагу и это неспроста. Блюдо настолько понравилось королеве, что она дала «добро» назвать его своим именем. Тесто используют тонкое дрожжевое. "
+            },
+            {
+                "price": {"small" : 500, "medium" : 600, "large" : 700},
+                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-neapolitanskaya.jpg?raw=true",
+                "title": "Неаполитанская",
+                "cost": 700,
+                "description": "пармезан, сладкие помидоры, орегано, анчоусы, базилик",
+                "fullDescription": "В приготовлении используют исключительно качественные продукты. Классический вариант предполагает высокие бортики."
+            },
+            {
+                "price": {"small" : 500},
+                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-chetyre-syra.jpg?raw=true",
+                "title": "4 сыра",
+                "cost": 750,
+                "description": "моцарелла, пармезан, фонтина, дор-блю",
+                "fullDescription": "Рецепт этой пиццы знает каждый житель Италии. Ароматная и сливочная, в сочетании со специями, как итог – невероятный вкус."
+            }
+        ],
+        "rollList":
+        [
+            {
+                "quantity": 6,
+                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true",
+                "title": "Маргарита",
+                "cost": 1500,
+                "description": "сладкие томаты, сыр моцарелла, оливковое масло, пряный базилик.",
+                "fullDescription": "Цветовая палитра Маргариты соответствует итальянскому флагу и это неспроста. Блюдо настолько понравилось королеве, что она дала «добро» назвать его своим именем. Тесто используют тонкое дрожжевое. "
+            },
+            {
+                "quantity": 6,
+                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-neapolitanskaya.jpg?raw=true",
+                "title": "Неаполитанская",
+                "cost": 1700,
+                "description": "пармезан, сладкие помидоры, орегано, анчоусы, базилик",
+                "fullDescription": "В приготовлении используют исключительно качественные продукты. Классический вариант предполагает высокие бортики."
+            },
+            {
+                "quantity": 6,
+                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-chetyre-syra.jpg?raw=true",
+                "title": "4 сыра",
+                "cost": 1750,
+                "description": "моцарелла, пармезан, фонтина, дор-блю",
+                "fullDescription": "Рецепт этой пиццы знает каждый житель Италии. Ароматная и сливочная, в сочетании со специями, как итог – невероятный вкус."
+            }
+        ]
+    }
+}
