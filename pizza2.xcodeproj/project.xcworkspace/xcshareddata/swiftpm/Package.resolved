@@ -8,6 +8,15 @@
         "branch" : "master",
         "revision" : "9375e4a0e5db3698c1f92bd5d1dc88b0b71caa8b"
       }
+    },
+    {
+      "identity" : "uiscrollview-infinitescroll",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pronebird/UIScrollView-InfiniteScroll",
+      "state" : {
+        "revision" : "ff0c2b0d0d83961f36df3dfb3e6ff6929ff46dd3",
+        "version" : "1.3.0"
+      }
     }
   ],
   "version" : 2

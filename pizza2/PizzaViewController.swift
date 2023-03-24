@@ -7,6 +7,8 @@
 
 import UIKit
 import Kingfisher
+
+
 class PizzaViewController: UIViewController {
     
 
@@ -58,9 +60,7 @@ extension PizzaViewController : UICollectionViewDataSource{
         let myCell = cell as? MyCollectionViewCell,
         let promotion = config?.productList.promotionList[indexPath.row]{
             myCell.titleLabel.text = promotion.title
-            let link = promotion.imageLink
-            print(link)
-            let url = URL(string: link)!
+            let url = URL(string: promotion.imageLink)!
             myCell.imagePizza.kf.setImage(with: Source.network(url))
         }
         return cell
@@ -77,11 +77,20 @@ extension PizzaViewController : UICollectionViewDelegate{
 
 extension PizzaViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        config?.productList.pizzaList.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PizzaTableViewCell", for: indexPath)
+        
+        if
+            let myCell = cell as? PizzaTableViewCell,
+            let pizza = config?.productList.pizzaList[indexPath.row]{
+            let arr = min(pizza.price.small ?? 9999, pizza.price.medium ?? 9999, pizza.price.large ?? 9999)
+            myCell.pizzaTitleCell.text = "\(pizza.title) от \(arr) р/)
+            
+        }
+           
     }
     
     

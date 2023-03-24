@@ -2,13 +2,16 @@
 //  PizzaTableViewCell.swift
 //  pizza2
 //
-//  Created by admin on 24.03.2023.
+//  Created by admin on 25.03.2023.
 //
 
 import UIKit
 
 class PizzaTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var pizzaDescriptionTableCell: UITextView!
+    @IBOutlet weak var pizzaTitleCell: UILabel!
+    @IBOutlet weak var pizzaImageTableCell: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
