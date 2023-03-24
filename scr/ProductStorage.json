@@ -158,27 +158,27 @@
         [
             {
                 "title": "На одного",
-                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/1_пицца_и_напиток.jpg?raw=true"
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/1_пицца_и_напиток.jpg"
             },
             {
                 "title": "На двоих",
-                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/2_пиццы_и_напиток.jpg?raw=true"
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/2_пиццы_и_напиток.jpg"
             },
             {
                 "title": "2 пиццы",
-                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/2_пиццы.jpg?raw=true"
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/2_пиццы.jpg"
             },
             {
                 "title": "3 пиццы",
-                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/3_пиццы.jpg?raw=true"
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/3_пиццы.jpg"
             },
             {
                 "title": "4 закуски",
-                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/4_закуски.jpg?raw=true"
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/4_закуски.jpg"
             },
             {
                 "title": "5 пицц",
-                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/5_пицц.jpg?raw=true"
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/5_пицц.jpg"
             }
         ]
     }

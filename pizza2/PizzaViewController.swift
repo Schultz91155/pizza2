@@ -58,7 +58,9 @@ extension PizzaViewController : UICollectionViewDataSource{
         let myCell = cell as? MyCollectionViewCell,
         let promotion = config?.productList.promotionList[indexPath.row]{
             myCell.titleLabel.text = promotion.title
-            let url = URL(string: promotion.imageLink)!
+            let link = promotion.imageLink
+            print(link)
+            let url = URL(string: link)!
             myCell.imagePizza.kf.setImage(with: Source.network(url))
         }
         return cell
