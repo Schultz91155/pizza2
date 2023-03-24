@@ -4,55 +4,181 @@
         "pizzaList":
         [
             {
-                "price": {"small" : 500, "medium" : 600, "large" : 700},
-                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true",
-                "title": "Маргарита",
-                "cost": 500,
-                "description": "сладкие томаты, сыр моцарелла, оливковое масло, пряный базилик.",
-                "fullDescription": "Цветовая палитра Маргариты соответствует итальянскому флагу и это неспроста. Блюдо настолько понравилось королеве, что она дала «добро» назвать его своим именем. Тесто используют тонкое дрожжевое. "
+                "title": "Аррива",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Аррива.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Цыпленок , острая чоризо , соус бургер, сладкий перец , красный лук , томаты , моцарелла, соус ранч, чеснок",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
             },
             {
-                "price": {"small" : 500, "medium" : 600, "large" : 700},
-                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-neapolitanskaya.jpg?raw=true",
-                "title": "Неаполитанская",
-                "cost": 700,
-                "description": "пармезан, сладкие помидоры, орегано, анчоусы, базилик",
-                "fullDescription": "В приготовлении используют исключительно качественные продукты. Классический вариант предполагает высокие бортики."
+                "title": "Бургер - пицца",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Бургер-пицца.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Ветчина , маринованные огурчики , томаты , красный лук , чеснок , соус бургер, моцарелла, фирменный томатный соус",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
             },
             {
-                "price": {"small" : 500},
-                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-chetyre-syra.jpg?raw=true",
-                "title": "4 сыра",
-                "cost": 750,
-                "description": "моцарелла, пармезан, фонтина, дор-блю",
-                "fullDescription": "Рецепт этой пиццы знает каждый житель Италии. Ароматная и сливочная, в сочетании со специями, как итог – невероятный вкус."
+                "title": "Додо",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Додо.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Бекон, митболы, пикантная пепперони, моцарелла, томаты, шампиньоны, сладкий перец, красный лук, чеснок, фирменный томатный соус",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
+            },
+            {
+                "title": "Карбонара",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Карбонара.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Бекон , сыры чеддер и пармезан , моцарелла, томаты , красный лук , чеснок , фирменный соус альфредо, итальянские травы",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
+            },
+            {
+                "title": "Мясная",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Мясная.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Цыпленок, ветчина, пикантная пепперони, острая чоризо, моцарелла, фирменный томатный соус",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
+            },
+            {
+                "title": "Песто",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Песто.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Цыпленок , соус песто , кубики брынзы , томаты , моцарелла, фирменный соус альфредо",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
+            },
+            {
+                "title": "Цыпленок барбекю",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Пицца/Цыпленок%20барбекю.jpg?raw=true",
+                "price":
+                {
+                    "small": 500,
+                    "medium": 600,
+                    "large": 700
+                },
+                "description": "Цыпленок , острая чоризо , соус бургер, сладкий перец , красный лук , томаты , моцарелла, соус ранч, чеснок",
+                "dough":
+                {
+                    "traditional": "традиционное ",
+                    "slim": "тонкое"
+                }
             }
         ],
-        "rollList":
+        "rollsList":
         [
             {
-                "quantity": 6,
-                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true",
-                "title": "Маргарита",
-                "cost": 1500,
-                "description": "сладкие томаты, сыр моцарелла, оливковое масло, пряный базилик.",
-                "fullDescription": "Цветовая палитра Маргариты соответствует итальянскому флагу и это неспроста. Блюдо настолько понравилось королеве, что она дала «добро» назвать его своим именем. Тесто используют тонкое дрожжевое. "
+                "title": "Большой папа",
+                "cost": 1999,
+                "description": "В комплекте: Соевый соус - 5шт, Имбирь: 5шт, Васаби: 5шт. 1. Горячий ролл «Китано» (рис, нори, копченный кальмар, огурец, сухари панировочные, соус унаги) 2. Горячий ролл «Чикен тар-тар» ...",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Ролы/Большой%20папа.jpg?raw=true",
+                "wieght": "2188 гр."
             },
             {
-                "quantity": 6,
-                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-neapolitanskaya.jpg?raw=true",
-                "title": "Неаполитанская",
-                "cost": 1700,
-                "description": "пармезан, сладкие помидоры, орегано, анчоусы, базилик",
-                "fullDescription": "В приготовлении используют исключительно качественные продукты. Классический вариант предполагает высокие бортики."
+                "title": "Голивуд",
+                "cost": 999,
+                "description": "В комплекте: Соевый соус - 5шт, Имбирь: 5шт, Васаби: 5шт. 1. Горячий ролл «Китано» (рис, нори, копченный кальмар, огурец, сухари панировочные, соус унаги) 2. Горячий ролл «Чикен тар-тар» ...",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Ролы/Голивуд.jpg?raw=true",
+                "wieght": "1555 гр."
             },
             {
-                "quantity": 6,
-                "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-chetyre-syra.jpg?raw=true",
-                "title": "4 сыра",
-                "cost": 1750,
-                "description": "моцарелла, пармезан, фонтина, дор-блю",
-                "fullDescription": "Рецепт этой пиццы знает каждый житель Италии. Ароматная и сливочная, в сочетании со специями, как итог – невероятный вкус."
+                "title": "Магнит",
+                "cost": 549,
+                "description": "В комплекте: Соевый соус - 5шт, Имбирь: 5шт, Васаби: 5шт. 1. Горячий ролл «Китано» (рис, нори, копченный кальмар, огурец, сухари панировочные, соус унаги) 2. Горячий ролл «Чикен тар-тар» ...",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Ролы/Магнит.jpg?raw=true",
+                "wieght": "930 гр."
+            },
+            {
+                "title": "Москва Сити",
+                "cost": 1299,
+                "description": "В комплекте: Соевый соус - 5шт, Имбирь: 5шт, Васаби: 5шт. 1. Горячий ролл «Китано» (рис, нори, копченный кальмар, огурец, сухари панировочные, соус унаги) 2. Горячий ролл «Чикен тар-тар» ...",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Ролы/Москва%20сити.jpg?raw=true",
+                "wieght": "1860 гр."
+            },
+            {
+                "title": "Постный",
+                "cost": 499,
+                "description": "В комплекте: Соевый соус - 5шт, Имбирь: 5шт, Васаби: 5шт. 1. Горячий ролл «Китано» (рис, нори, копченный кальмар, огурец, сухари панировочные, соус унаги) 2. Горячий ролл «Чикен тар-тар» ...",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Ролы/Постный.jpg?raw=true",
+                "wieght": "775 гр."
+            }
+        ],
+        "promotionList":
+        [
+            {
+                "title": "На одного",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/1%20пицца%20и%20напиток.jpg?raw=true"
+            },
+            {
+                "title": "На двоих",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/2%20пиццы%20и%20напиток.jpg?raw=true"
+            },
+            {
+                "title": "2 пиццы",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/2%20пиццы.jpg?raw=true"
+            },
+            {
+                "title": "3 пиццы",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/3%20пиццы.jpg?raw=true"
+            },
+            {
+                "title": "4 закуски",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/4%20закуски.jpg?raw=true"
+            },
+            {
+                "title": "5 пицц",
+                "imageLink": "https://github.com/Schultz91155/pizza2/blob/main/scr/Акции/5%20пицц.jpg?raw=true"
             }
         ]
     }

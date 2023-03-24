@@ -34,7 +34,7 @@ struct Rolls : Codable{
     let cost: Int
     let imageLink: String
     let description: String
-    let wieght : Int
+    let wieght : String
 }
 
 struct Promotion : Codable{
