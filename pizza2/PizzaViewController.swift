@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class PizzaViewController: UIViewController {
     
 
@@ -48,16 +48,20 @@ class PizzaViewController: UIViewController {
 
 extension PizzaViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        return config?.productList.promotionList.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath)
         
-        guard let myCell = cell as? MyCollectionViewCell else{
-            return cell
+        if
+        let myCell = cell as? MyCollectionViewCell,
+        let promotion = config?.productList.promotionList[indexPath.row]{
+            myCell.titleLabel.text = promotion.title
+            let url = URL(string: promotion.imageLink)!
+            myCell.imagePizza.kf.setImage(with: Source.network(url))
         }
-        return myCell
+        return cell
             
         
     }
