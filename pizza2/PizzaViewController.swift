@@ -147,6 +147,9 @@ extension PizzaViewController : UITableViewDataSource{
 
 extension PizzaViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let pizza = config?.productList.pizzaList[indexPath.row] else {return}
+        //TODO: how to select a price by size?
+        Basket.shared.add(pizza: pizza, price: 80.0)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
