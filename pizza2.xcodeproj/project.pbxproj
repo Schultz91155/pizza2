@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D695D973F89FD695762D57 /* Pods_pizza2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF4F8FD893840317E68CC06 /* Pods_pizza2.framework */; };
+		84860B5729D4935B004F41BA /* PizzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84860B5629D4935B004F41BA /* PizzaDetailsViewController.swift */; };
+		848E817829D4A567005A53E9 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E817729D4A567005A53E9 /* BasketViewController.swift */; };
+		848E817A29D4A6FA005A53E9 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E817929D4A6FA005A53E9 /* BasketTableViewCell.swift */; };
+		848E817E29D4B311005A53E9 /* BusketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E817D29D4B311005A53E9 /* BusketModel.swift */; };
 		84982BFB29CE64770054044F /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84982BFA29CE64770054044F /* PizzaTableViewCell.swift */; };
 		84B6483029CDCF8500EE212F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6482F29CDCF8500EE212F /* AppDelegate.swift */; };
 		84B6483229CDCF8500EE212F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6483129CDCF8500EE212F /* SceneDelegate.swift */; };
@@ -22,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84860B5629D4935B004F41BA /* PizzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDetailsViewController.swift; sourceTree = "<group>"; };
+		848E817729D4A567005A53E9 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		848E817929D4A6FA005A53E9 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		848E817D29D4B311005A53E9 /* BusketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketModel.swift; sourceTree = "<group>"; };
 		84982BFA29CE64770054044F /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
 		84B6482C29CDCF8500EE212F /* pizza2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizza2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B6482F29CDCF8500EE212F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +44,9 @@
 		84B6484929CDF77400EE212F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		84B6484F29CDF8A900EE212F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		84B6485129CDFBAE00EE212F /* ConfigFletcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFletcher.swift; sourceTree = "<group>"; };
+		C1D82815F90FEB75819117F5 /* Pods-pizza2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pizza2.debug.xcconfig"; path = "Target Support Files/Pods-pizza2/Pods-pizza2.debug.xcconfig"; sourceTree = "<group>"; };
+		C6D534686A4570B16D0DFC62 /* Pods-pizza2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pizza2.release.xcconfig"; path = "Target Support Files/Pods-pizza2/Pods-pizza2.release.xcconfig"; sourceTree = "<group>"; };
+		DBF4F8FD893840317E68CC06 /* Pods_pizza2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pizza2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +55,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B6485529CE258700EE212F /* Kingfisher in Frameworks */,
+				07D695D973F89FD695762D57 /* Pods_pizza2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64EB546F8657CD8AE65EA0EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1D82815F90FEB75819117F5 /* Pods-pizza2.debug.xcconfig */,
+				C6D534686A4570B16D0DFC62 /* Pods-pizza2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84B6482329CDCF8500EE212F = {
 			isa = PBXGroup;
 			children = (
 				84B6482E29CDCF8500EE212F /* pizza2 */,
 				84B6482D29CDCF8500EE212F /* Products */,
+				64EB546F8657CD8AE65EA0EB /* Pods */,
+				F6FB52726D75E4C9DB586F93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +104,20 @@
 				84B6484F29CDF8A900EE212F /* ProductModel.swift */,
 				84B6485129CDFBAE00EE212F /* ConfigFletcher.swift */,
 				84982BFA29CE64770054044F /* PizzaTableViewCell.swift */,
+				84860B5629D4935B004F41BA /* PizzaDetailsViewController.swift */,
+				848E817729D4A567005A53E9 /* BasketViewController.swift */,
+				848E817929D4A6FA005A53E9 /* BasketTableViewCell.swift */,
+				848E817D29D4B311005A53E9 /* BusketModel.swift */,
 			);
 			path = pizza2;
+			sourceTree = "<group>";
+		};
+		F6FB52726D75E4C9DB586F93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBF4F8FD893840317E68CC06 /* Pods_pizza2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B6484029CDCF8700EE212F /* Build configuration list for PBXNativeTarget "pizza2" */;
 			buildPhases = (
+				4ED46293B8533AEA85ADECB4 /* [CP] Check Pods Manifest.lock */,
 				84B6482829CDCF8500EE212F /* Sources */,
 				84B6482929CDCF8500EE212F /* Frameworks */,
 				84B6482A29CDCF8500EE212F /* Resources */,
+				115528977BE0329DD7FF417A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,7 +170,7 @@
 			);
 			mainGroup = 84B6482329CDCF8500EE212F;
 			packageReferences = (
-				84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 				84B6485629CE54A200EE212F /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
 			);
 			productRefGroup = 84B6482D29CDCF8500EE212F /* Products */;
@@ -157,11 +195,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		115528977BE0329DD7FF417A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pizza2/Pods-pizza2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pizza2/Pods-pizza2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pizza2/Pods-pizza2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ED46293B8533AEA85ADECB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pizza2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84B6482829CDCF8500EE212F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848E817829D4A567005A53E9 /* BasketViewController.swift in Sources */,
 				84B6484829CDEDE200EE212F /* MyCollectionViewCell.swift in Sources */,
 				84B6485229CDFBAE00EE212F /* ConfigFletcher.swift in Sources */,
 				84B6483029CDCF8500EE212F /* AppDelegate.swift in Sources */,
@@ -169,7 +250,10 @@
 				84982BFB29CE64770054044F /* PizzaTableViewCell.swift in Sources */,
 				84B6483229CDCF8500EE212F /* SceneDelegate.swift in Sources */,
 				84B6485029CDF8A900EE212F /* ProductModel.swift in Sources */,
+				848E817A29D4A6FA005A53E9 /* BasketTableViewCell.swift in Sources */,
 				84B6484429CDED9200EE212F /* PizzaViewController.swift in Sources */,
+				84860B5729D4935B004F41BA /* PizzaDetailsViewController.swift in Sources */,
+				848E817E29D4B311005A53E9 /* BusketModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +395,7 @@
 		};
 		84B6484129CDCF8700EE212F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D82815F90FEB75819117F5 /* Pods-pizza2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +423,7 @@
 		};
 		84B6484229CDCF8700EE212F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D534686A4570B16D0DFC62 /* Pods-pizza2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,7 +473,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -408,7 +494,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		84B6485429CE258700EE212F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 84B6485329CE258700EE212F /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,0 +1,16 @@
+PODS:
+  - ValueStepper (1.6)
+
+DEPENDENCIES:
+  - ValueStepper
+
+SPEC REPOS:
+  trunk:
+    - ValueStepper
+
+SPEC CHECKSUMS:
+  ValueStepper: 8b120c72c8d1391cd874a427485e2e57fda1a0b9
+
+PODFILE CHECKSUM: eab77183c6fe237761436e1c2d45c9b89c7d6ab5
+
+COCOAPODS: 1.12.0
