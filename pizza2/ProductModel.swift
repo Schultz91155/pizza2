@@ -7,14 +7,7 @@
 
 import Foundation
 
-protocol Product : Codable{
-    
-    var title : String { get }
-    var imageLink: String {get}
-   
-}
-
-struct Pizza : Codable, Product{
+struct Pizza : Codable {
     
     let title: String
     let imageLink: String
@@ -35,7 +28,7 @@ struct Pizza : Codable, Product{
 
 }
 
-struct Rolls : Codable, Product{
+struct Rolls : Codable {
     
     let title: String
     let cost: Int
@@ -44,7 +37,7 @@ struct Rolls : Codable, Product{
     let wieght : String
 }
 
-struct Promotion : Codable, Product{
+struct Promotion : Codable{
     
     let title: String
     let imageLink: String

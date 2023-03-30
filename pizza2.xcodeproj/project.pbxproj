@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07D695D973F89FD695762D57 /* Pods_pizza2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF4F8FD893840317E68CC06 /* Pods_pizza2.framework */; };
+		33FB694C29D6113A00B4D6F8 /* BasketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB694B29D6113A00B4D6F8 /* BasketItem.swift */; };
 		84860B5729D4935B004F41BA /* PizzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84860B5629D4935B004F41BA /* PizzaDetailsViewController.swift */; };
 		848E817829D4A567005A53E9 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E817729D4A567005A53E9 /* BasketViewController.swift */; };
 		848E817A29D4A6FA005A53E9 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E817929D4A6FA005A53E9 /* BasketTableViewCell.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33FB694B29D6113A00B4D6F8 /* BasketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketItem.swift; sourceTree = "<group>"; };
 		84860B5629D4935B004F41BA /* PizzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDetailsViewController.swift; sourceTree = "<group>"; };
 		848E817729D4A567005A53E9 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		848E817929D4A6FA005A53E9 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				848E817729D4A567005A53E9 /* BasketViewController.swift */,
 				848E817929D4A6FA005A53E9 /* BasketTableViewCell.swift */,
 				848E817D29D4B311005A53E9 /* BusketModel.swift */,
+				33FB694B29D6113A00B4D6F8 /* BasketItem.swift */,
 			);
 			path = pizza2;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				84B6483229CDCF8500EE212F /* SceneDelegate.swift in Sources */,
 				84B6485029CDF8A900EE212F /* ProductModel.swift in Sources */,
 				848E817A29D4A6FA005A53E9 /* BasketTableViewCell.swift in Sources */,
+				33FB694C29D6113A00B4D6F8 /* BasketItem.swift in Sources */,
 				84B6484429CDED9200EE212F /* PizzaViewController.swift in Sources */,
 				84860B5729D4935B004F41BA /* PizzaDetailsViewController.swift in Sources */,
 				848E817E29D4B311005A53E9 /* BusketModel.swift in Sources */,
