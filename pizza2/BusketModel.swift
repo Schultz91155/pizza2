@@ -14,16 +14,12 @@ class Basket {
     private let userDefaults: UserDefaults
     private(set) var items: [BasketItem]
     
-<<<<<<< Updated upstream
     init(userDefaults: UserDefaults = .standard) {
         self.userDefaults = userDefaults
         self.items = [BasketItem]()
         setup()
     }
-=======
-    static let shared = Basket(products: [Product]())
-    static let key = "key"
->>>>>>> Stashed changes
+
     
     private func setup() {
         self.items = self.read()
