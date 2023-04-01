@@ -7,8 +7,12 @@
 
 import UIKit
 import Kingfisher
+import MessageUI
 
 class BasketViewController: UIViewController {
+    
+    @IBOutlet weak var sendOrderContainerVeiw: UIView!
+    @IBOutlet weak var sendOrderButton: UIButton!
     
     var items = [BasketItem]()
     
@@ -25,6 +29,29 @@ class BasketViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        
+        let buttonAction = UIAction { [weak self] action in
+            // open mail view controller
+            self?.sendEmail()
+        }
+        sendOrderButton.addAction(buttonAction, for: .touchUpInside)
+        styleOrderButton()
+    }
+    
+    func styleOrderButton() {
+        sendOrderContainerVeiw.backgroundColor = .clear
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+     
+        sendOrderContainerVeiw.insertSubview(blurView, at: 0)
+        
+        NSLayoutConstraint.activate([
+            blurView.leadingAnchor.constraint(equalTo: sendOrderContainerVeiw.leadingAnchor),
+            blurView.trailingAnchor.constraint(equalTo: sendOrderContainerVeiw.trailingAnchor),
+            blurView.topAnchor.constraint(equalTo: sendOrderContainerVeiw.topAnchor),
+            blurView.bottomAnchor.constraint(equalTo: sendOrderContainerVeiw.bottomAnchor)
+        ])
     }
     
     func update() {
@@ -32,16 +59,35 @@ class BasketViewController: UIViewController {
         tableView.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["pizzamailserver@mail.ru"])
+            //TODO: how to map array of basket items to mail text body
+            let itemsText = items.map { basketItem -> String in
+                """
+                <p>
+                Продукт: \(basketItem.title)
+                Описание: \(basketItem.description)
+                Цена: \(basketItem.price)
+                </p>
+                """
+            }.joined(separator: "\n")
+            
+            let titleBody = "<p>Ваш заказ</p>"
+            let messageBody = [titleBody, itemsText].joined(separator: "\n")
+            mail.setMessageBody(messageBody, isHTML: true)
+            mail.setSubject("Новый заказ")
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+        }
     }
-    */
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
 
 }
 extension BasketViewController : UITableViewDataSource{
@@ -64,5 +110,8 @@ extension BasketViewController : UITableViewDataSource{
     
 }
 extension BasketViewController : UITableViewDelegate {
+    
+}
+extension BasketViewController: MFMailComposeViewControllerDelegate {
     
 }
