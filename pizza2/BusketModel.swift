@@ -19,6 +19,7 @@ class Basket {
         self.items = [BasketItem]()
         setup()
     }
+
     
     private func setup() {
         self.items = self.read()
