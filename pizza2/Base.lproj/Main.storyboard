@@ -252,6 +252,79 @@
             </objects>
             <point key="canvasLocation" x="-1504.3478260869567" y="1633.9285714285713"/>
         </scene>
+        <!--Pizza Details View Controller-->
+        <scene sceneID="vJy-Gg-hTw">
+            <objects>
+                <viewController id="TIQ-uo-VOM" customClass="PizzaDetailsViewController" customModule="pizza2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S1l-j1-yhu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOQ-mF-gqD">
+                                <rect key="frame" x="87" y="130" width="240" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cw1-Rg-VzE">
+                                <rect key="frame" x="30" y="724" width="354" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wb6-HJ-yyD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Slim"/>
+                                    <segment title="Traditional"/>
+                                </segments>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGp-vq-izv">
+                                <rect key="frame" x="87" y="413" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o8-B0-YUU">
+                                <rect key="frame" x="30" y="784" width="354" height="48"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Buy" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4nR-AJ-Hjv">
+                                <rect key="frame" x="30" y="664" width="354" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lv1-xj-Gv6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EzO-KF-R7k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EzO-KF-R7k" firstAttribute="trailing" secondItem="0o8-B0-YUU" secondAttribute="trailing" constant="30" id="3qu-LR-YPw"/>
+                            <constraint firstItem="0o8-B0-YUU" firstAttribute="leading" secondItem="EzO-KF-R7k" secondAttribute="leading" constant="30" id="MkI-gB-oHH"/>
+                            <constraint firstItem="EzO-KF-R7k" firstAttribute="bottom" secondItem="0o8-B0-YUU" secondAttribute="bottom" constant="30" id="Ppg-A7-a98"/>
+                            <constraint firstItem="Cw1-Rg-VzE" firstAttribute="leading" secondItem="EzO-KF-R7k" secondAttribute="leading" constant="30" id="Qmx-LI-lcX"/>
+                            <constraint firstItem="4nR-AJ-Hjv" firstAttribute="leading" secondItem="EzO-KF-R7k" secondAttribute="leading" constant="30" id="SHw-Qh-rho"/>
+                            <constraint firstItem="Cw1-Rg-VzE" firstAttribute="top" secondItem="4nR-AJ-Hjv" secondAttribute="bottom" constant="30" id="Ue7-VO-Wuq"/>
+                            <constraint firstItem="EzO-KF-R7k" firstAttribute="trailing" secondItem="4nR-AJ-Hjv" secondAttribute="trailing" constant="30" id="e5j-6e-tXm"/>
+                            <constraint firstItem="0o8-B0-YUU" firstAttribute="top" secondItem="Cw1-Rg-VzE" secondAttribute="bottom" constant="30" id="lbM-3k-vmC"/>
+                            <constraint firstItem="EzO-KF-R7k" firstAttribute="trailing" secondItem="Cw1-Rg-VzE" secondAttribute="trailing" constant="30" id="rj8-K1-Oxk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVe-zV-KQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1495.6521739130435" y="2316.9642857142858"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="d8f-OK-PJC">
             <objects>
@@ -288,14 +361,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eE0-aF-fZA">
-                                                    <rect key="frame" x="8" y="8" width="70" height="73"/>
+                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="0FE-xL-y0M"/>
                                                         <constraint firstAttribute="height" constant="70" id="iJk-nM-GsX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 999 р." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdo-dU-iOa">
-                                                    <rect key="frame" x="8" y="96" width="70" height="18"/>
+                                                    <rect key="frame" x="8" y="93" width="70" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="QCv-27-GG4"/>
                                                         <constraint firstAttribute="height" constant="18" id="kYa-oK-0QM"/>
@@ -393,6 +466,11 @@
             <point key="canvasLocation" x="101.44927536231884" y="1634.5982142857142"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Z8G-9L-jG8">
+            <size key="intrinsicContentSize" width="141" height="29"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Basket" width="48" height="48"/>
         <systemColor name="labelColor">
