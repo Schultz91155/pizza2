@@ -10,7 +10,11 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
+    lazy var promotionViewController: PromotionViewController = {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PromotionVC") as! PromotionViewController
+        return vc
+    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

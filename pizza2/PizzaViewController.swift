@@ -8,11 +8,13 @@
 import UIKit
 import Kingfisher
 
-class PizzaViewController: UIViewController {
+class PizzaViewController: UIViewController, ViewControllerContainable {
     
-
+    var containerView: UIView {
+        collectionViewContainer
+    }
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewContainer: UIView!
     @IBOutlet weak var tableView: UITableView!
     //private var numberOfItemsInSection : Int = 10000
     var currentIndexCell = 2
@@ -23,17 +25,18 @@ class PizzaViewController: UIViewController {
     var config : AppConfig?{
         
         didSet{
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-                self.tableView.reloadData()
-            }
+//            DispatchQueue.main.async {
+//                self.collectionView.reloadData()
+//                self.tableView.reloadData()
+//            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        
+//        collectionView.dataSource = self
+//        collectionView.delegate = self
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -43,7 +46,10 @@ class PizzaViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slideToNext), userInfo: nil, repeats: true)
         
         
-        
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            let vc = appDelegate.promotionViewController
+            present(viewController: vc, animated: true, duration: 0.5, delay: 0.1)
+        }
     }
 
    override func viewDidAppear(_ animated: Bool) {
@@ -53,6 +59,11 @@ class PizzaViewController: UIViewController {
 //        collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
     }
     
+    func addIntoBasket(pizza: Pizza) {
+        //TODO: how to select a price by size?
+        Basket.shared.add(pizza: pizza, price: 80.0)
+    }
+    
     @objc func slideToNext(){
         let count = config?.productList.promotionList.count ?? 0
         if currentIndexCell < count-1{
@@ -60,7 +71,7 @@ class PizzaViewController: UIViewController {
         } else{
             currentIndexCell = 2
         }
-        collectionView.scrollToItem(at: IndexPath(item: currentIndexCell, section: 0), at: .right, animated: true)
+//        collectionView.scrollToItem(at: IndexPath(item: currentIndexCell, section: 0), at: .right, animated: true)
     }
 
     func fetchData (){
@@ -148,8 +159,7 @@ extension PizzaViewController : UITableViewDataSource{
 extension PizzaViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let pizza = config?.productList.pizzaList[indexPath.row] else {return}
-        //TODO: how to select a price by size?
-        Basket.shared.add(pizza: pizza, price: 80.0)
+        addIntoBasket(pizza: pizza)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
